@@ -35,7 +35,7 @@
 
     <div class="row mt-3" v-for="review in reviews">
 
-      <div class="col-md-2">
+      <div class="col-2">
         <img src="../assets/images/avatar.jpg" alt="Аватар" class="img-fluid">
       </div>
       <div class="col-md-10">
@@ -45,7 +45,7 @@
       </div>
 
       <div class="row ml-5 mt-3" v-for="child in review.children">
-        <div class="col-md-2">
+        <div class="col-2">
           <img src="../assets/images/avatar.jpg" alt="Аватар" class="img-fluid">
         </div>
         <div class="col-md-10">

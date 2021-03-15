@@ -3,8 +3,7 @@
     <div class="container-fluid">
       <div class="container">
 
-        <div class="row mt-3">
-          <div class="col-md-3"></div>
+        <div class="row mt-3 justify-content-center">
           <div class="col-md-4">
             <h3>Разделы</h3>
             <ul>
@@ -13,7 +12,7 @@
               <li>Контакты</li>
             </ul>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-4">
             <h3>Новостная рассылка</h3>
             <p>Подписавшись на нашу рассылку, вы всегда будете получать последние новости и обновления.</p>
             <form action="#" method="post" class="form-inline">

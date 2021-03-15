@@ -52,8 +52,8 @@
             </div>
           </div>
           <div class="row">
-            <div v-for="image in book.images" class="col-md-4">
-              <img :src="image" class="img-fluid" alt="image.image.url">
+            <div v-for="object in book.images" :key="object.id" class="col-md-4">
+              <img :src="object.image" class="img-fluid" alt="image.image.url">
             </div>
           </div>
         </div>

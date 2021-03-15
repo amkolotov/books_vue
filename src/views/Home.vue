@@ -6,7 +6,7 @@
       <div class="col-md-4">
         <div class="side-bar">
 
-          <h3>Поиск книги</h3>
+          <h4>ПOИСК КНИГИ</h4>
 
           <form class="form-inline my-2 my-lg-0" action="#">
             <input class="form-control mr-sm-2"
@@ -16,8 +16,10 @@
 
           <form action="#" method="get">
 
+            <hr>
+
             <div class="left-side my-4">
-              <h3 class="sear-head editContent">Жанры</h3>
+              <h4 class="sear-head editContent">ЖАНРЫ</h4>
               <ul class="w3layouts-box-list">
 
                 <li class="editContent">
@@ -37,7 +39,7 @@
             </div>
 
             <div class="left-side">
-              <h3 class="sear-head editContent">Год</h3>
+              <h4 class="sear-head editContent">ГОД</h4>
               <ul class="w3layouts-box-list">
 
                 <li class="editContent">
@@ -60,14 +62,16 @@
 
           </form>
 
-          <h3 class="sear-head mt-3">Последние добавленные</h3>
+          <hr>
+
+          <h4 class="sear-head mt-3">НОВИНКИ</h4>
           <div class="row my-4" v-for="lastBook in listBooks" :key="lastBook.id">
-            <div class="col-md-4">
+            <div class="col-4">
               <router-link to="{path: '/', query: {page: 1}}">
                 <img :src="lastBook.cover" alt="lastBook.title" class="img-fluid">
               </router-link>
             </div>
-            <div class="col-md-8">
+            <div class="col-8 last-book">
               <router-link :to="{name: 'Book', params: {id: lastBook.id}}"><h5>{{ lastBook.title }}</h5></router-link>
             </div>
           </div>
@@ -78,7 +82,7 @@
       <div class="col-md-8 books">
         <div class="row">
 
-          <div v-for="book in listBooks" :key="book.id" class="col-md-6">
+          <div v-for="book in listBooks" :key="book.id" class="col-md-6 text-center">
             <div class="card mb-4 shadow-sm">
               <router-link :to="{name: 'Book', params: {id: book.id}}">
                 <img :src="book.cover" class="card-img-top" alt="Книга 1">
@@ -92,7 +96,7 @@
                 </router-link>
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">{{ book.tagline }}</li>
+                <li class="list-group-item"><<{{ book.tagline }}>></li>
                 <li class="list-group-item">
                   <div class="row justify-content-center">
                     <ul class="stars">

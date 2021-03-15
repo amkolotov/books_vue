@@ -14,9 +14,9 @@
           <div class="col-md-6">
             <h3>{{ author.name }}</h3>
             <ul>
-              <li><span><b>Дата рождения:</b> {{ author.birthday }}</span></li>
+              <li><span><b>Дата рождения:</b> {{ author.birthday }} г.</span></li>
 
-              <li v-if="author.death"><span><b>Дата смерти:</b> {{ author.death }}</span></li>
+              <li v-if="author.death"><span><b>Дата смерти:</b> {{ author.death }} г.</span></li>
 
             </ul>
           </div>
